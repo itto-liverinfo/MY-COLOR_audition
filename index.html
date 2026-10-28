@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111018">
+<meta name="description" content="MY:COLOR TikTok LIVE オーディション">
+<title>MY:COLOR | TikTok LIVE AUDITION</title>
+
+<!-- SNSリンクプレビュー（OGP） -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MY:COLOR">
+<meta property="og:title" content="MY:COLOR | TikTok LIVE AUDITION">
+<meta property="og:description" content="MY:COLOR TikTok LIVE オーディション">
+<meta property="og:url" content="https://ams-v-livers.github.io/test.MY-COLOR/">
+<meta property="og:image" content="https://ams-v-livers.github.io/test.MY-COLOR/assets/logo-mycolor.png">
+<meta name="twitter:card" content="summary">
+
+<!-- ブラウザタブ / ホーム画面アイコン -->
+<link rel="icon" type="image/png" href="./assets/logo-mycolor.png">
+<link rel="apple-touch-icon" href="./assets/logo-mycolor.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./styles.css?v=20261028-v4">
+
+<!-- CSS読み込み失敗用-->
+<style>
+html,body{margin:0;overflow-x:hidden;background:#111018;color:#fff}
+*,*::before,*::after{box-sizing:border-box}
+.hero-rotator{width:170px;height:170px;max-width:170px;max-height:170px;position:absolute;right:5%;bottom:85px;z-index:5}
+.rotator-svg{display:block;width:100%;height:100%;max-width:100%;max-height:100%}
+.rotator-center{position:absolute;inset:0;display:grid;place-items:center}
+.rotator-center img{width:80px;height:80px;object-fit:contain}
+.marquee{overflow:hidden}
+@media(max-width:760px){
+.hero-rotator{width:112px;height:112px;right:5%;bottom:56px}
+.rotator-center img{width:54px;height:54px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="header" id="top">
+  <a class="logo" href="#top">
+    <img src="assets/logo-mycolor.png" alt="MY:COLOR">
+  </a>
+
+  <nav class="nav" id="nav">
+    <a href="#about">ABOUT</a>
+    <a href="#support">SUPPORT</a>
+    <a href="#audition">AUDITION</a>
+    <a href="#flow">FLOW</a>
+    <a href="#faq">FAQ</a>
+    <a class="nav-entry" href="#entry">ENTRY <span>✦</span></a>
+  </nav>
+
+  <button class="menu-button" id="menuButton"
+    aria-label="メニューを開く"
+    aria-controls="nav"
+    aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+<!--  TOP  -->
+
+<section class="hero">
+
+  <div class="hero-photo"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <p class="eyebrow">
+      TIKTOK LIVE REAL LIVER AUDITION
+    </p>
+
+    <p class="hero-overline">
+      自分らしさを、配信の強さに。
+    </p>
+
+    <h1 class="hero-title">
+      CREATE<br>
+      <em>YOUR</em> FUTURE
+    </h1>
+
+    <p class="hero-sub">
+      MY:COLORでは、TikTok LIVEで活動したい
+      リアルライバーを募集しています。<br>
+      未経験でも、これから本気で挑戦したい方でも大歓迎です。
+    </p>
+
+    <div class="hero-actions">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf-7yygt2XnijUYs4MAwKAguP16swbWlmOe8ZdRUxUV1L9PWg/viewform?usp=publish-editor"
+        class="button primary"
+        target="_blank"
+        rel="noopener noreferrer">
+        オーディションに応募する <span>✦</span>
+      </a>
+
+      <a href="#about" class="text-link">
+        詳しく見る <span>✦</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 回転してるロゴ部分 -->
+  <div class="hero-rotator"
+    aria-hidden="true"
+    style="width:170px;height:170px;">
+
+    <svg
+      class="rotator-svg"
+      viewBox="0 0 220 220"
+      width="170"
+      height="170"
+      style="display:block;width:100%;height:100%;max-width:100%;">
+
+      <defs>
+        <path id="rotatorCircle"
+          d="M110,110 m-78,0
+          a78,78 0 1,1 156,0
+          a78,78 0 1,1 -156,0"/>
+      </defs>
+
+      <circle
+        class="rotator-core"
+        cx="110"
+        cy="110"
+        r="62"/>
+
+      <text class="rotator-text">
+        <textPath href="#rotatorCircle">
+          CREATE YOUR FUTURE ✦ MY:COLOR ✦ TIKTOK LIVE AUDITION ✦
+        </textPath>
+      </text>
+    </svg>
+
+    <div class="rotator-center">
+      <img
+        src="assets/logo-mycolor.png"
+        alt=""
+        width="80"
+        height="80">
+    </div>
+
+  </div>
+
+  <div class="hero-bottom">
+    <span>SCROLL TO EXPLORE</span>
+    <span class="scroll-track"></span>
+    <span>01 / 06</span>
+  </div>
+
+</section>
+
+<!--  MARQUEE  -->
+
+<section class="marquee" aria-label="ブランドメッセージ">
+  <div class="marquee-track" id="marqueeTrack">
+
+    <div class="marquee-group">
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+    </div>
+
+    <div class="marquee-group" aria-hidden="true">
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+      <span>REAL LIVER ✦ TIKTOK LIVE ✦ MY:COLOR ✦ CREATE YOUR FUTURE ✦</span>
+    </div>
+
+  </div>
+</section>
+
+<!--  ABOUT  -->
+
+<section class="section about" id="about">
+
+  <div class="section-top">
+    <span>01 / ABOUT</span>
+    <span>ABOUT US</span>
+  </div>
+
+  <div class="about-layout">
+
+    <h2 class="heading-xl reveal">
+      あなたの魅力を、<br>
+      もっと多くの人へ。<br>
+      <span>その一歩を後押しします。</span>
+    </h2>
+
+    <div class="about-side reveal">
+
+      <p>
+        MY:COLORは、TikTok LIVEでの活動に挑戦したい<br>
+        リアルライバーを応援するためのオーディションを実施しています。
+      </p>
+
+      <p>
+        配信経験の有無に関わらず、一人ひとりの個性や目標に合わせて<br>
+        活動のスタートから継続までサポートします。
+      </p>
+
+      <a href="#support" class="inline-link">
+        サポート内容を見る <span>✦</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!--  SUPPORT  -->
+
+<section class="section support" id="support">
+
+  <div class="section-top">
+    <span>02 / SUPPORT</span>
+    <span>SUPPORT CONTENTS</span>
+  </div>
+
+  <div class="section-heading-row">
+    <h2 class="heading-xl reveal">
+      ACTIVITY<br><span>SUPPORT.</span>
+    </h2>
+
+    <p class="section-desc">
+      これから始めたい方も、もっと伸ばしたい方も…！<br>
+      一人ひとりの活動をサポートします。
+    </p>
+  </div>
+
+  <div class="support-grid">
+
+    <article class="support-card reveal">
+      <div class="support-head">
+        <span class="support-num">01</span>
+        <span class="support-icon">✦</span>
+      </div>
+      <h3>配信スタート支援</h3>
+      <p>
+        アカウント準備や配信開始までの流れなど…<br>
+        初動で迷いやすい、ポイントを丁寧にサポートします。
+      </p>
+    </article>
+
+    <article class="support-card reveal">
+      <div class="support-head">
+        <span class="support-num">02</span>
+        <span class="support-icon">✦</span>
+      </div>
+      <h3>活動方針の相談</h3>
+      <p>
+        目標や得意分野に合わせて<br>
+        配信ジャンルや進め方を一緒に整理します。
+      </p>
+    </article>
+
+    <article class="support-card reveal">
+      <div class="support-head">
+        <span class="support-num">03</span>
+        <span class="support-icon">✦</span>
+      </div>
+      <h3>企画 / 配信内容の提案</h3>
+      <p>
+        雑談・特技配信・イベント活用など…<br>
+        個性を活かした企画作りをサポートしています。
+      </p>
+    </article>
+
+    <article class="support-card reveal">
+      <div class="support-head">
+        <span class="support-num">04</span>
+        <span class="support-icon">✦</span>
+      </div>
+      <h3>活動中の相談対応</h3>
+      <p>
+        日々の配信で出てくる悩みや不安を<br>
+        気軽に相談できる環境づくりを大切にしています。
+      </p>
+    </article>
+
+  </div>
+
+  <p class="section-note">
+
+  </p>
+
+</section>
+
+<!--  STATEMENT  -->
+
+<section class="statement">
+
+  <div class="statement-photo"></div>
+  <div class="statement-overlay"></div>
+
+  <div class="statement-inner">
+
+    <p class="statement-label">
+      REAL LIVER / TIKTOK LIVE / MY:COLOR
+    </p>
+
+    <h2>
+      新しい挑戦を、<br>
+      <em>ここから。</em>
+    </h2>
+
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSf-7yygt2XnijUYs4MAwKAguP16swbWlmOe8ZdRUxUV1L9PWg/viewform?usp=publish-editor"
+      class="button white"
+      target="_blank"
+      rel="noopener noreferrer">
+      エントリーする <span>✦</span>
+    </a>
+
+  </div>
+
+</section>
+
+<!--  AUDITION  -->
+
+<section class="section audition" id="audition">
+
+  <div class="section-top">
+    <span>03 / AUDITION</span>
+    <span>WHO WE'RE LOOKING FOR</span>
+  </div>
+
+  <div class="audition-layout">
+
+    <div>
+      <h2 class="heading-xl reveal">
+        WE WANT<br><span>YOU.</span>
+      </h2>
+      <p class="audition-lead">
+        こんな方のご応募をお待ちしています。
+      </p>
+    </div>
+
+    <div class="audition-items">
+
+      <div>
+        <span>01</span>
+        <p>TikTok LIVEで活動してみたい方</p>
+      </div>
+
+      <div>
+        <span>02</span>
+        <p>人と話すこと / 発信することが好きな方</p>
+      </div>
+
+      <div>
+        <span>03</span>
+        <p>自分らしい魅力を活かして、活動したい方</p>
+      </div>
+
+      <div>
+        <span>04</span>
+        <p>継続して頑張っていきたい・稼ぎたい方</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <p class="section-note">
+    ※ 18歳未満の応募・日本国外に在住の方は、ご応募できません。
+  </p>
+
+</section>
+
+<!--  FLOW  -->
+
+<section class="section flow" id="flow">
+
+  <div class="section-top">
+    <span>04 / FLOW</span>
+    <span>HOW TO JOIN</span>
+  </div>
+
+  <h2 class="heading-xl reveal">
+    THE FIRST<br><span>STEP.</span>
+  </h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <span class="step-num">01</span>
+      <h3>エントリー</h3>
+      <p>応募フォームからご応募ください。</p>
+      <span class="step-arrow">✦</span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">02</span>
+      <h3>ご連絡 / ご案内</h3>
+      <p>担当者より選考や面談についてご案内します。</p>
+      <span class="step-arrow">✦</span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">03</span>
+      <h3>オンライン面談</h3>
+      <p>活動の希望内容、方向性をすり合わせていきます。</p>
+      <span class="step-arrow">✦</span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">04</span>
+      <h3>活動スタート！</h3>
+      <p>各種設定や必要事項の確認後、TikTok LIVEでの活動を開始します。</p>
+      <span class="step-arrow">✦</span>
+    </div>
+
+  </div>
+
+  <p class="section-note">
+
+  </p>
+
+</section>
+
+<!--  FAQ  -->
+
+<section class="section faq" id="faq">
+
+  <div class="section-top">
+    <span>05 / FAQ</span>
+    <span>QUESTIONS & ANSWERS</span>
+  </div>
+
+  <div class="faq-layout">
+
+    <h2 class="heading-xl reveal">
+      GOOD<br><span>TO KNOW.</span>
+    </h2>
+
+    <div class="faq-items">
+
+      <details>
+        <summary>
+          配信経験がなくても応募は、できますか？
+          <span>＋</span>
+        </summary>
+        <p>
+          未経験の方でも大丈夫です。
+          正式な応募条件は募集要項をご確認ください。
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          面談はどのように行われますか？
+          <span>＋</span>
+        </summary>
+        <p>
+          オンラインでの面談を行います。
+          詳細は応募後に、ご案内させて頂きます。
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          応募後の流れを知りたいです。
+          <span>＋</span>
+        </summary>
+        <p>
+          頂いた応募内容を確認させて頂きまして、担当者より
+          今後の選考についてご案内します。
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          どんな配信内容でも大丈夫ですか？
+          <span>＋</span>
+        </summary>
+        <p>
+          TikTok LIVEのルールに沿っていただければ問題ありません。
+          活動内容に不安がありましたら、相談しながら決定していきます。
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!--  ENTRY  -->
+
+<section class="entry" id="entry">
+
+  <div class="entry-glow"></div>
+
+  <p class="entry-index">06 / ENTRY</p>
+
+  <p class="entry-kicker">
+    YOUR NEXT CHAPTER STARTS HERE.
+  </p>
+
+  <h2 class="entry-title">
+    READY TO<br><em>GO LIVE?</em>
+  </h2>
+
+  <p class="entry-copy">
+    あなたの一歩を、MY:COLORが後押しします。
+  </p>
+
+  <!-- 応募先 URL -->
+  <a
+    class="button entry-button"
+    id="applyButton"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSf-7yygt2XnijUYs4MAwKAguP16swbWlmOe8ZdRUxUV1L9PWg/viewform?usp=publish-editor"
+    target="_blank"
+    rel="noopener noreferrer">
+    応募する <span>✦</span>
+  </a>
+
+</section>
+
+</main>
+
+<!--  FOOTER  -->
+
+<footer class="footer">
+
+  <a href="#top" class="footer-logo">
+    MY:COLOR
+  </a>
+
+  <div class="footer-right">
+    <p>TIKTOK LIVE / REAL LIVER AUDITION</p>
+    <p>© <span id="year"></span> MY:COLOR</p>
+  </div>
+
+</footer>
+
+<script src="./script.js?v=20261028-v4"></script>
+
+</body>
+</html>
